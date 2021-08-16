@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#"
+     xml:base="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Basic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Basic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Tier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Category">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Classic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Classic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Tier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Edition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Edition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#FemaleU18 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#FemaleU18">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#FinalStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#FinalStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#KnockoutStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#GroupStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#GroupStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Stage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#KnockoutStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#KnockoutStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Stage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#MaleU18 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#MaleU18">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Master -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Master">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Tier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Match -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Match">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Player">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#QuarterFinalStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#QuarterFinalStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#KnockoutStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Roster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Roster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#RoundOf16Stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#RoundOf16Stage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#KnockoutStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#SemiFinalStage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#SemiFinalStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#KnockoutStage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Stage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#SummerTournament -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#SummerTournament">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Tier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Tier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#DomainEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Top -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Top">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology#Tier"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
