@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="foaf.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.bbc.co.uk/ontologies/coreconcepts/1.17" uri="coreconcepts.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://www.bbc.co.uk/ontologies/provenance/1.9" uri="provenance.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="http://xmlns.com/foaf/spec/index.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.bbc.co.uk/ontologies/sport/3.2" uri="sport.ttl"/>
-    <uri id="Imports Wizard Entry" name="http://www.bbc.co.uk/ontologies/sport/3.2" uri="file:/Users/riccardomaldini/Desktop/Uni/WS/project/sport.ttl"/>
-    <uri id="Imports Wizard Entry" name="http://www.bbc.co.uk/ontologies/sport/3.2" uri="file:/Users/riccardomaldini/Desktop/Uni/WS/project/sport.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1629191025905" name="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20" uri="fip-3x3-tournament-ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1629191025905" name="http://xmlns.com/foaf/0.1/" uri="foaf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1629214171214" name="http://www.semanticweb.org/riccardomaldini/ontologies/3x3-tournament-ontology" uri="fip-3x3-tournament-ontology.owl"/>
     </group>
 </catalog>
