@@ -13,13 +13,33 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:sport="http://www.bbc.co.uk/ontologies/sport/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:provenance="http://www.bbc.co.uk/ontologies/provenance/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology/1.0.0"/>
         <owl:imports rdf:resource="http://www.bbc.co.uk/ontologies/sport/3.2"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
 
 
@@ -501,14 +521,14 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.bbc.co.uk/ontologies/sport/awayCompetitor"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Team"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.bbc.co.uk/ontologies/sport/homeCompetitor"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Team"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -776,6 +796,109 @@
 
     <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
         <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#team">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finds all players that played in the same team of x.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team mates</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#isPlayerOf"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#team"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#isPlayerOf"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#team"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#teammatedWith"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 

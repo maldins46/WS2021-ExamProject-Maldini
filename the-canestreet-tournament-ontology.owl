@@ -13,6 +13,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:sport="http://www.bbc.co.uk/ontologies/sport/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:provenance="http://www.bbc.co.uk/ontologies/provenance/"
      xmlns:coreconcepts="http://www.bbc.co.uk/ontologies/coreconcepts/"
@@ -377,7 +378,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#CarloGaliano">
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
         <fip-3x3-tournament-ontology:isPlayerOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SlamDrunk2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-03-18</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-03-18T23:30:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carlo</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galiano</foaf:lastName>
     </owl:NamedIndividual>
@@ -434,7 +435,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#FedericoRossetti">
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#StaffMember"/>
         <fip-3x3-tournament-ontology:staffMemberOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#TheCanestreet2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-04-01</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-04-01T00:00:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Federico</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rossetti</foaf:lastName>
     </owl:NamedIndividual>
@@ -538,7 +539,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GiovanniMoretti">
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
         <fip-3x3-tournament-ontology:isPlayerOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SlamDrunk2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-06-02</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-06-02T00:00:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giovanni</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moretti</foaf:lastName>
     </owl:NamedIndividual>
@@ -559,7 +560,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#JacopoBartolucci">
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
         <fip-3x3-tournament-ontology:isPlayerOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SlamDrunk2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-14</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-07-14T00:00:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jacopo</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bartolucci</foaf:lastName>
     </owl:NamedIndividual>
@@ -724,7 +725,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#StaffMember"/>
         <fip-3x3-tournament-ontology:isPlayerOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SanAntonioSpussy2021"/>
         <fip-3x3-tournament-ontology:staffMemberOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#TheCanestreet2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-05-12</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-05-12T23:30:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lorenzo</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fava</foaf:lastName>
     </owl:NamedIndividual>
@@ -758,7 +759,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#MarcoRossetti">
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#StaffMember"/>
         <fip-3x3-tournament-ontology:staffMemberOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#TheCanestreet2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-09-16</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-09-16T00:00:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rossetti</foaf:lastName>
     </owl:NamedIndividual>
@@ -782,7 +783,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#StaffMember"/>
         <fip-3x3-tournament-ontology:isPlayerOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#PiuttostoTosti2021"/>
         <fip-3x3-tournament-ontology:staffMemberOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#TheCanestreet2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-03-07</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-03-07T00:00:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michele</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mosca</foaf:lastName>
     </owl:NamedIndividual>
@@ -816,7 +817,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#NoahGiacche">
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
         <fip-3x3-tournament-ontology:isPlayerOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SlamDrunk2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-08-12</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-08-12T00:00:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noah</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giacché</foaf:lastName>
     </owl:NamedIndividual>
@@ -894,7 +895,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#RiccardoMaldini">
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#StaffMember"/>
         <fip-3x3-tournament-ontology:staffMemberOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#TheCanestreet2021"/>
-        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1996-06-24</coreconcepts:dateOfBirth>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-06-24T00:00:00+02:00</coreconcepts:dateOfBirth>
         <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riccardo</foaf:firstName>
         <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maldini</foaf:lastName>
     </owl:NamedIndividual>
@@ -1196,6 +1197,88 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Team"/>
         <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un Filo di Gas Reloaded</foaf:name>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AleciottiDaTrePunti2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#BaioLifeMatters2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GliExDiMiaSorella2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#KingOfTheCage2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#Lesbronzz2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#Philastrada2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#PiuttostoTosti2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SanAntonioSpussy2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SlamDrunk2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SmallThree2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#TackoBell2021"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#UnFiloDiGasReloaded2021"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AlessandroCandi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AlessandroCiampaglia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AlessandroCrinelli"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AlessandroFioretti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AlessandroNorato"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AlessioPiancatelli"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AndreaPiccini"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#AntonioValentini"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#CarloDelfino"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#CarloGaliano"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#EliaBonci"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#FabioGiampieri"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#FedericoRossetti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#FrancescoGrasselli"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GabrieleGambini"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GiacomoMosca"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GianeMarcoMangune"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GianmarcoLorenzetti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GiorgioGiacani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GiovanniMontanari"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#GiovanniMoretti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#JacopoBartolucci"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#LeonardoMazzufferi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#LeonardoZoppi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#LorenzoCardinali"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#LorenzoChiariotti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#LorenzoFava"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#LorenzoTurchi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#MaksymNemchenko"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#MarcoRossetti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#MatteoSebastianelli"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#MicheleMosca"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#NiccoloPaolinelli"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#NicolaCinti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#NoahGiacche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#PaoloCarbonari"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#PietroCerri"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#RiccardoFerretti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#RiccardoMaldini"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#RobertoMosca"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#RyanMillete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SamiSlama"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SamueleBastianelli"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SamueleBlasi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SamueleMoretti"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SamueleSchiavoni"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SimoneFrittelli"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#SimoneMentonelli"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#TeoFabrizi"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 
