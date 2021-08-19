@@ -223,7 +223,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#lost">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#lostBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
     </owl:ObjectProperty>
     
@@ -257,7 +256,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#won">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#wonBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
     </owl:ObjectProperty>
     
@@ -473,7 +471,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/nick"/>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -662,18 +660,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#isCompetitorOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Edition"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#isCompetitorOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#GroupRound"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#hasPlayer"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
@@ -811,16 +797,19 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y">
+    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#team">
+    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finds all players that played in the same team of x.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team mates</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finds teams what won away.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Away Winner</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -828,7 +817,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -837,9 +826,10 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#homePoints"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -847,10 +837,10 @@
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#isPlayerOf"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#team"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#awayPoints"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -858,10 +848,12 @@
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#isPlayerOf"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#team"/>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                                                </swrl:arguments>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -869,9 +861,10 @@
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.bbc.co.uk/ontologies/sport/awayCompetitor"/>
                                                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
-                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -891,9 +884,344 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#teammatedWith"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#wonBy"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#y"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finds teams what lost away.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Away Loser</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#homePoints"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#awayPoints"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.bbc.co.uk/ontologies/sport/awayCompetitor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#lostBy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finds teams what lost at home.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Home Loser</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#homePoints"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#awayPoints"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.bbc.co.uk/ontologies/sport/homeCompetitor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#lostBy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finds all players that played in the same team of x.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teammate</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#homePoints"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#awayPoints"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.bbc.co.uk/ontologies/sport/homeCompetitor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#wonBy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finds teams what won at home.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Home Winner</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Match"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#homePoints"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#awayPoints"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#hp"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#ap"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#wonBy"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-20#x"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>

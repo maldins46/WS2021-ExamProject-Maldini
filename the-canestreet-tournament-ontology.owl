@@ -45,26 +45,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#isPlayerOf -->
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#isPlayerOf">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Player"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/fip-3x3-tournament-ontology#Team"/>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1155,8 +1135,8 @@
         <fip-3x3-tournament-ontology:hasVenue rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#CentroSportivoSanPietroMartire"/>
         <fip-3x3-tournament-ontology:isEditionOf rdf:resource="http://www.semanticweb.org/riccardomaldini/ontologies/the-canestreet-tournament-ontology#TheCanestreet"/>
         <fip-3x3-tournament-ontology:editionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</fip-3x3-tournament-ontology:editionYear>
-        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Canestreet 3° edizione 2021</foaf:name>
         <sport:eventGender rdf:resource="http://www.bbc.co.uk/things/event-gender/mens"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Canestreet 3° edizione 2021</foaf:name>
     </owl:NamedIndividual>
     
 
