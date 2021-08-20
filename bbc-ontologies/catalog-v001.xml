@@ -2,5 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://www.bbc.co.uk/ontologies/provenance/1.9" uri="provenance.ttl"/>
     <uri id="Imports Wizard Entry" name="http://www.bbc.co.uk/ontologies/coreconcepts/1.17" uri="coreconcepts.ttl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1629467461598" name="http://xmlns.com/foaf/0.1/" uri="foaf.owl"/>
+    </group>
 </catalog>
