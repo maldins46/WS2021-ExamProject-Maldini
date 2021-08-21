@@ -29,7 +29,7 @@
         <provenance:provider>mailto:riccardo.maldini@gmail.com</provenance:provider>
         <provenance:public rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</provenance:public>
         <provenance:slug>the-canestreet</provenance:slug>
-        <provenance:version>1.0.0</provenance:version>
+        <provenance:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</provenance:version>
         <rdfs:comment xml:lang="en">The Canestreet Ontology describes schedule, organization and people involved in the FIP 3x3 Tournament The Canestreet, based on the concepts given by the FIP 3x3 Summer Tournaments Ontology.</rdfs:comment>
         <rdfs:label xml:lang="en">The Canestreet Ontology</rdfs:label>
     </owl:Ontology>
