@@ -1,5 +1,3 @@
-## The Canestreet 3x3 Tournament, Semantic Web Project
-
 This repository contains the project that I brought as the exam project for the Semantic Web course (42500), University of Bologna.
 
 The project attempts to describe the basic structure and schedule of a 3x3 Summer Tournament of the FIP Circuit, active from this year (2021). 
