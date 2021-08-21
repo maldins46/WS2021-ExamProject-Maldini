@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-51#"
-     xml:base="http://www.semanticweb.org/riccardomaldini/ontologies/2021/7/untitled-ontology-51"
+<rdf:RDF xmlns="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#"
+     xml:base="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
