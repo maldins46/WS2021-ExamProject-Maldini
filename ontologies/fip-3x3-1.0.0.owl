@@ -21,7 +21,7 @@
      xmlns:provenance="http://www.bbc.co.uk/ontologies/provenance/">
     <owl:Ontology rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl">
         <owl:versionIRI rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3-1.0.0.owl"/>
-        <owl:imports rdf:resource="http://www.bbc.co.uk/ontologies/sport/3.2"/>
+        <owl:imports rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/imports/bbc-sport-3.2.ttl"/>
         <dc:creator>https://www.riccardomaldini.it</dc:creator>
         <terms:license>https://opensource.org/licenses/MIT</terms:license>
         <provenance:canonicalLocation>https://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip3x3-1.0.0.owl</provenance:canonicalLocation>
@@ -50,6 +50,12 @@
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
     
 
 
@@ -431,6 +437,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
                     <rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isEditionOf"/>
@@ -440,11 +447,6 @@
                         <owl:onProperty rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#hasTier"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Tier"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.bbc.co.uk/ontologies/sport/eventGender"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.bbc.co.uk/ontologies/sport/EventGender"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -604,6 +606,7 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+                    <rdf:Description rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.bbc.co.uk/ontologies/sport/awayCompetitor"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -613,11 +616,6 @@
                         <owl:onProperty rdf:resource="http://www.bbc.co.uk/ontologies/sport/homeCompetitor"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.bbc.co.uk/ontologies/sport/isMatchOf"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -747,19 +745,13 @@
 
     <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#SummerTournament">
         <rdfs:subClassOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Fip3x3DomainEntity"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
         <rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"/>
         <rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#hasEdition"/>
                 <owl:someValuesFrom rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A competition that takes place each summer, for a bunch of days. By a federal view, a tournament is a sporting organization, as the winer team of an edition of a torunament becomes the representative of the tournament, in the national finals.</rdfs:comment>
@@ -773,6 +765,7 @@
 
     <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team">
         <rdfs:subClassOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Fip3x3DomainEntity"/>
+        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
         <rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -792,13 +785,6 @@
                 <owl:onProperty rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#hasPlayer"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A team competing on an edition of the tournament. Following the official FIBA 3x3 rules, a team might have from 3 to 4 players. Each team can partiticipate at most to one edition.</rdfs:comment>
@@ -848,6 +834,30 @@
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
         <rdfs:label xml:lang="en">Tier</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error1 -->
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error2 -->
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error3 -->
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
+    
+
+
+    <!-- http://org.semanticweb.owlapi/error#Error4 -->
+
+    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
     
 
 
@@ -958,6 +968,18 @@
         <rdfs:label xml:lang="en">Top</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://www.fip.it/public/115/9485/_3x3%20italia%20fip%20circuit_compressed.pdf</rdfs:seeAlso>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </rdf:Description>
     
 
 
