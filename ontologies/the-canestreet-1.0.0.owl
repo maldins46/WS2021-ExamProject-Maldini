@@ -1,0 +1,1429 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#"
+     xml:base="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sport="http://www.bbc.co.uk/ontologies/sport/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:fip-3x3="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#"
+     xmlns:ontology="http://dbpedia.org/ontology/"
+     xmlns:provenance="http://www.bbc.co.uk/ontologies/provenance/"
+     xmlns:coreconcepts="http://www.bbc.co.uk/ontologies/coreconcepts/">
+    <owl:Ontology rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl">
+        <owl:versionIRI rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet-1.0.0.owl"/>
+        <owl:imports rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3-1.0.0.owl"/>
+        <dc:creator>https://www.riccardomaldini.it</dc:creator>
+        <terms:license>https://opensource.org/licenses/MIT</terms:license>
+        <provenance:canonicalLocation>https://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet-1.0.0.owl</provenance:canonicalLocation>
+        <provenance:provided rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-01T00:00:00+02:00</provenance:provided>
+        <provenance:provider>mailto:riccardo.maldini@gmail.com</provenance:provider>
+        <provenance:public rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</provenance:public>
+        <provenance:slug>the-canestreet</provenance:slug>
+        <provenance:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0</provenance:version>
+        <rdfs:comment xml:lang="en">The Canestreet Ontology describes schedule, organization and people involved in the FIP 3x3 Tournament The Canestreet, based on the concepts given by the FIP 3x3 Summer Tournaments Ontology.</rdfs:comment>
+        <rdfs:label xml:lang="en">The Canestreet Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/locatedInArea -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/locatedInArea"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/municipalityCode -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/municipalityCode"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/City -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/City"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#GroupRound -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#GroupRound"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#KnockoutRound -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#KnockoutRound"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Playground -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Playground"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#StaffMember -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#StaffMember"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#SummerTournament -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#SummerTournament"/>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team -->
+
+    <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl">
+        <rdf:type rdf:resource="http://www.bbc.co.uk/ontologies/provenance/Ontology"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleFiloFinal -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleFiloFinal">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleMoretti"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021Finals"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-08T23:30:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleFiloGroupC -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleFiloGroupC">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleMoretti"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupC"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T22:50:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleLesbronzzGroupC -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleLesbronzzGroupC">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SimoneMentonelli"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupC"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T20:30:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleSmallQuarterFinal3 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleSmallQuarterFinal3">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleMoretti"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021QuarterFinals"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-08T21:30:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleTackoGroupC -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleTackoGroupC">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MatteoSebastianelli"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupC"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T21:25:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aleciotti da tre Punti</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCandi -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCandi">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alessandro</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Candi</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCiampaglia -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCiampaglia">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alessandro</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciampaglia</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCrinelli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCrinelli">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alessandro</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crinelli</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroFioretti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroFioretti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alessandro</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fioretti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroNorato -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroNorato">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alessandro</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Norato</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessioPiancatelli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessioPiancatelli">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alessio</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piancatelli</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AndreaPiccini -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AndreaPiccini">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrea</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piccini</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AntonioValentini -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AntonioValentini">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antonio</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valentini</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioFiloQuarterFinal4 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioFiloQuarterFinal4">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiorgioGiacani"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021QuarterFinals"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-08T21:50:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baio Life Matters</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioSmallGroupB -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioSmallGroupB">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMontanari"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupB"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T20:10:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioTostiGroupB -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioTostiGroupB">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMontanari"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupB"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T22:30:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021Finals -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021Finals">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#KnockoutRound"/>
+        <sport:isStageOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <sport:roundType rdf:resource="http://www.bbc.co.uk/things/round-types/final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupA -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupA">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#GroupRound"/>
+        <sport:isStageOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <sport:roundType rdf:resource="http://www.bbc.co.uk/things/round-types/group"/>
+        <foaf:nick rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Girone A</foaf:nick>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupB -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupB">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#GroupRound"/>
+        <sport:isStageOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <sport:roundType rdf:resource="http://www.bbc.co.uk/things/round-types/group"/>
+        <foaf:nick rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Girone B</foaf:nick>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupC -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupC">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#GroupRound"/>
+        <sport:isStageOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <sport:roundType rdf:resource="http://www.bbc.co.uk/things/round-types/group"/>
+        <foaf:nick rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Girone C</foaf:nick>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021QuarterFinals -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021QuarterFinals">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#KnockoutRound"/>
+        <sport:isStageOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <sport:roundType rdf:resource="http://www.bbc.co.uk/things/round-types/quarter-final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021SemiFinals -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021SemiFinals">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#KnockoutRound"/>
+        <sport:isStageOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <sport:roundType rdf:resource="http://www.bbc.co.uk/things/round-types/semi-final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CarloDelfino -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CarloDelfino">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carlo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delfino</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CarloGaliano -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CarloGaliano">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-03-18T23:30:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carlo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galiano</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Playground"/>
+        <ontology:locatedInArea rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Jesi"/>
+        <fip-3x3:isPlaygroundOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <fip-3x3:isIndoor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</fip-3x3:isIndoor>
+        <fip-3x3:numberOfCourts rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</fip-3x3:numberOfCourts>
+        <rdfs:comment xml:lang="en">The Centro Sportivo San Pietro Martire is an outdoor modular playground, created for the occasion over the skates track of the sporting center.</rdfs:comment>
+        <rdfs:label xml:lang="en">Centro Sportivo San Pietro Martire</rdfs:label>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Centro Sportivo San Pietro Martire</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#EliaBonci -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#EliaBonci">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elia</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bonci</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#ExPhilaGroupA -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#ExPhilaGroupA">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroNorato"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupA"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-08T19:30:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FabioGiampieri -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FabioGiampieri">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabio</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giampieri</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FedericoRossetti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FedericoRossetti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#StaffMember"/>
+        <fip-3x3:staffMemberOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-04-01T00:00:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Federico</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rossetti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FiloTackoGroupC -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FiloTackoGroupC">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RiccardoFerretti"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupC"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T22:15:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FrancescoGrasselli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FrancescoGrasselli">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francesco</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grasselli</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GabrieleGambini -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GabrieleGambini">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabriele</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gambini</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiacomoMosca -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiacomoMosca">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giacomo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mosca</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GianeMarcoMangune -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GianeMarcoMangune">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giane Marco</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Encarnacion Mangune</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GianmarcoLorenzetti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GianmarcoLorenzetti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gianmarco</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lorenzetti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiorgioGiacani -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiorgioGiacani">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giorgio</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giacani</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMontanari -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMontanari">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giovanni</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Montanari</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMoretti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMoretti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-06-02T00:00:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giovanni</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moretti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gli ex di mia Sorella</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#JacopoBartolucci -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#JacopoBartolucci">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-07-14T00:00:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jacopo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bartolucci</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Jesi -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Jesi">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/City"/>
+        <ontology:municipalityCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60035</ontology:municipalityCode>
+        <rdfs:comment xml:lang="en">The town where the Tournament TheCanestreet is held.</rdfs:comment>
+        <rdfs:label xml:lang="en">Jesi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingBaioGroupB -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingBaioGroupB">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMontanari"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupB"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T20:50:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">King of the Cage</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingSmallGroupB -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingSmallGroupB">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LeonardoZoppi"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupB"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T23:30:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingTostiGroupB -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingTostiGroupB">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FabioGiampieri"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupB"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T19:50:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LeonardoMazzufferi -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LeonardoMazzufferi">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leonardo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mazzufferi</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LeonardoZoppi -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LeonardoZoppi">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leonardo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoppi</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lesbronzz</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LesbronzzFiloGroupC -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LesbronzzFiloGroupC">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamiSlama"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupC"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T21:50:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LesbronzzSpussyQuarterFinal1 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LesbronzzSpussyQuarterFinal1">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCiampaglia"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021QuarterFinals"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-08T20:50:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LesbronzzTackoGroupC -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LesbronzzTackoGroupC">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamiSlama"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupC"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T20:35:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoCardinali -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoCardinali">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lorenzo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardinali</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoChiariotti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoChiariotti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lorenzo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chiariotti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoFava -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoFava">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#StaffMember"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <fip-3x3:staffMemberOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-05-12T23:30:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lorenzo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fava</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoTurchi -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoTurchi">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lorenzo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turchi</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MaksymNemchenko -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MaksymNemchenko">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maksym</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nemchenko</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MarcoRossetti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MarcoRossetti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#StaffMember"/>
+        <fip-3x3:staffMemberOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-09-16T00:00:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rossetti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MatteoSebastianelli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MatteoSebastianelli">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matteo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sebastianelli</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MicheleMosca -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MicheleMosca">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#StaffMember"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <fip-3x3:staffMemberOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-03-07T00:00:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michele</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mosca</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NiccoloPaolinelli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NiccoloPaolinelli">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niccolò</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paolinelli</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NicolaCinti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NicolaCinti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicola</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cinti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NoahGiacche -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NoahGiacche">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-08-12T00:00:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noah</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giacché</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PalestraNovelli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PalestraNovelli">
+        <fip-3x3:isPlaygroundOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <fip-3x3:isIndoor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</fip-3x3:isIndoor>
+        <fip-3x3:numberOfCourts rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</fip-3x3:numberOfCourts>
+        <rdfs:comment xml:lang="en">The Palestra Primo Novelli is the &quot;emergency&quot; playground of the tournament. In case of rain, matches are played here.</rdfs:comment>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Palestra Primo Novelli</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PaoloCarbonari -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PaoloCarbonari">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paolo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbonari</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PhilaSpussyGroupA -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PhilaSpussyGroupA">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCandi"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupA"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T22:45:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philastrada</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PietroCerri -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PietroCerri">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pietro</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cerri</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piuttosto Tosti</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RiccardoFerretti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RiccardoFerretti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riccardo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ferretti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RiccardoMaldini -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RiccardoMaldini">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#StaffMember"/>
+        <fip-3x3:staffMemberOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021"/>
+        <coreconcepts:dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-06-24T00:00:00+02:00</coreconcepts:dateOfBirth>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riccardo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maldini</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RobertoMosca -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RobertoMosca">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberto</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mosca</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RyanMillete -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RyanMillete">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ryan</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Millete</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamiSlama -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamiSlama">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sami</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slama</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleBastianelli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleBastianelli">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuele</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bastianelli</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleBlasi -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleBlasi">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuele Antonio</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blasi</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleMoretti -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleMoretti">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuele</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOretti</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleSchiavoni -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleSchiavoni">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samuele</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schiavoni</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">San Antonio Spussy</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SimoneFrittelli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SimoneFrittelli">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simone</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frittelli</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SimoneMentonelli -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SimoneMentonelli">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simone</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentonelli</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slam Drunk</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamExGroupA -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamExGroupA">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#JacopoBartolucci"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupA"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T23:10:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamPhilaGroupA -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamPhilaGroupA">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#JacopoBartolucci"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupA"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T21:00:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamSpussyGroupA -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamSpussyGroupA">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NoahGiacche"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupA"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T20:10:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamTostiQuarterFinal2 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamTostiQuarterFinal2">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FabioGiampieri"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021QuarterFinals"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-08T21:10:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small Three</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SpussyAleSemiFinal1 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SpussyAleSemiFinal1">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleMoretti"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021SemiFinals"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-08T22:10:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SpussyExGroupA -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SpussyExGroupA">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCiampaglia"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupA"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T21:10:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tacko Bell</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TeoFabrizi -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TeoFabrizi">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <fip-3x3:isPlayerOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021"/>
+        <foaf:firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teo</foaf:firstName>
+        <foaf:lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabrizi</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#SummerTournament"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Canestreet</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
+        <fip-3x3:hasTier rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Basic"/>
+        <fip-3x3:hasVenue rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <fip-3x3:isEditionOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TheCanestreet"/>
+        <sport:eventGender rdf:resource="http://www.bbc.co.uk/things/event-gender/mens"/>
+        <fip-3x3:editionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</fip-3x3:editionYear>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Canestreet 3° edizione 2021</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TostiFiloSemiFinal2 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TostiFiloSemiFinal2">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiorgioGiacani"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021SemiFinals"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-08T22:30:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TostiSmallGroupB -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TostiSmallGroupB">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
+        <fip-3x3:hasMVP rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FabioGiampieri"/>
+        <fip-3x3:hasPlayground rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CentroSportivoSanPietroMartire"/>
+        <sport:awayCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021"/>
+        <sport:homeCompetitor rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+        <sport:isMatchOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Canestreet2021GroupB"/>
+        <fip-3x3:awayPoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</fip-3x3:awayPoints>
+        <fip-3x3:homePoints rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</fip-3x3:homePoints>
+        <fip-3x3:matchTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-05T19:45:00+02:00</fip-3x3:matchTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021 -->
+
+    <owl:NamedIndividual rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021">
+        <rdf:type rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un Filo di Gas Reloaded</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AleciottiDaTrePunti2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#BaioLifeMatters2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GliExDiMiaSorella2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#KingOfTheCage2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Lesbronzz2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#Philastrada2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PiuttostoTosti2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SanAntonioSpussy2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SlamDrunk2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SmallThree2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TackoBell2021"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#UnFiloDiGasReloaded2021"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCandi"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCiampaglia"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroCrinelli"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroFioretti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessandroNorato"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AlessioPiancatelli"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AndreaPiccini"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#AntonioValentini"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CarloDelfino"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#CarloGaliano"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#EliaBonci"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FabioGiampieri"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FedericoRossetti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#FrancescoGrasselli"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GabrieleGambini"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiacomoMosca"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GianeMarcoMangune"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GianmarcoLorenzetti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiorgioGiacani"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMontanari"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#GiovanniMoretti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#JacopoBartolucci"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LeonardoMazzufferi"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LeonardoZoppi"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoCardinali"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoChiariotti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoFava"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#LorenzoTurchi"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MaksymNemchenko"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MarcoRossetti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MatteoSebastianelli"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#MicheleMosca"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NiccoloPaolinelli"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NicolaCinti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#NoahGiacche"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PaoloCarbonari"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#PietroCerri"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RiccardoFerretti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RiccardoMaldini"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RobertoMosca"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#RyanMillete"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamiSlama"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleBastianelli"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleBlasi"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleMoretti"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SamueleSchiavoni"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SimoneFrittelli"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#SimoneMentonelli"/>
+            <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl#TeoFabrizi"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
