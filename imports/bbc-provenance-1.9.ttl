@@ -7,7 +7,7 @@
 @base <http://www.bbc.co.uk/ontologies/provenance> .
 
 <http://www.bbc.co.uk/ontologies/provenance> rdf:type owl:Ontology ;
-                                              owl:versionIRI <http://www.bbc.co.uk/ontologies/provenance/1.9> ;
+                                              owl:versionIRI <http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/imports/bbc-provenance-1.9.ttl> ;
                                               <http://purl.org/dc/elements/1.1/creator> <mailto:LinkedData@bbc.co.uk> ;
                                               <http://purl.org/dc/elements/1.1/date> "2012-12-01"^^xsd:date ;
                                               <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
@@ -1385,8 +1385,8 @@ rdfs:Property rdf:type owl:Class .
 
 
 <http://purl.org/dc/terms/Agent> rdfs:label "Agent"@en ;
-                                 rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                  rdfs:comment "A resource that acts or has the power to act."@en ;
+                                 rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                  <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
@@ -1409,8 +1409,8 @@ rdfs:Property rdf:type owl:Class .
                                rdfs:seeAlso <https://www.dublincore.org/specifications/dublin-core/dcmi-box/> .
 
 
-<http://purl.org/dc/terms/FileFormat> rdfs:label "File Format"@en ;
-                                      rdfs:comment "A digital resource format."@en ;
+<http://purl.org/dc/terms/FileFormat> rdfs:comment "A digital resource format."@en ;
+                                      rdfs:label "File Format"@en ;
                                       <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 
@@ -1421,8 +1421,8 @@ rdfs:Property rdf:type owl:Class .
                                      <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
-<http://purl.org/dc/terms/ISO3166> <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
-                                   rdfs:comment "The set of codes listed in ISO 3166-1 for the representation of names of countries."@en ;
+<http://purl.org/dc/terms/ISO3166> rdfs:comment "The set of codes listed in ISO 3166-1 for the representation of names of countries."@en ;
+                                   <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                    rdfs:label "ISO 3166"@en ;
                                    rdfs:seeAlso <https://www.iso.org/obp/ui/#search> .
@@ -1435,21 +1435,21 @@ rdfs:Property rdf:type owl:Class .
                                     rdfs:label "ISO 639-2"@en .
 
 
-<http://purl.org/dc/terms/ISO639-3> rdfs:label "ISO 639-3"@en ;
-                                    rdfs:comment "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages."@en ;
+<http://purl.org/dc/terms/ISO639-3> rdfs:comment "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages."@en ;
+                                    rdfs:label "ISO 639-3"@en ;
                                     <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                     rdfs:seeAlso <http://www.sil.org/iso639-3/> .
 
 
 <http://purl.org/dc/terms/Jurisdiction> rdfs:label "Jurisdiction"@en ;
+                                        rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                         rdfs:comment "The extent or range of judicial, law enforcement, or other authority."@en ;
-                                        <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                        rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+                                        <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
-<http://purl.org/dc/terms/LicenseDocument> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                           rdfs:label "License Document"@en ;
+<http://purl.org/dc/terms/LicenseDocument> rdfs:label "License Document"@en ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                            <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
                                            rdfs:comment "A legal document giving official permission to do something with a resource."@en .
 
@@ -1474,8 +1474,8 @@ rdfs:Property rdf:type owl:Class .
 
 
 <http://purl.org/dc/terms/MediaType> rdfs:comment "A file format or physical medium."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                      rdfs:label "Media Type"@en ;
+                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                      <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
@@ -1485,8 +1485,8 @@ rdfs:Property rdf:type owl:Class .
                                              <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
-<http://purl.org/dc/terms/MethodOfAccrual> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                           rdfs:comment "A method by which resources are added to a collection."@en ;
+<http://purl.org/dc/terms/MethodOfAccrual> rdfs:comment "A method by which resources are added to a collection."@en ;
+                                           rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                            rdfs:label "Method of Accrual"@en ;
                                            <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
@@ -1561,8 +1561,8 @@ rdfs:Property rdf:type owl:Class .
                                    <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
                                    rdfs:seeAlso <http://www.ietf.org/rfc/rfc4646.txt> ;
                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                   rdfs:label "RFC 4646"@en ;
-                                   rdfs:comment "The set of tags constructed according to RFC 4646 for the identification of languages."@en .
+                                   rdfs:comment "The set of tags constructed according to RFC 4646 for the identification of languages."@en ;
+                                   rdfs:label "RFC 4646"@en .
 
 
 <http://purl.org/dc/terms/RFC5646> <http://purl.org/dc/terms/issued> "2010-10-11"^^xsd:date ;
@@ -1592,8 +1592,8 @@ rdfs:Property rdf:type owl:Class .
                                     <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
-<http://purl.org/dc/terms/URI> rdfs:comment "The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force."@en ;
-                               rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+<http://purl.org/dc/terms/URI> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                               rdfs:comment "The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force."@en ;
                                <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
                                rdfs:seeAlso <http://www.ietf.org/rfc/rfc3986.txt> ;
                                rdfs:label "URI"@en .
@@ -1608,8 +1608,8 @@ rdfs:Property rdf:type owl:Class .
 
 <http://purl.org/dc/terms/abstract> rdfs:label "Abstract"@en ;
                                     <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
-                                    rdfs:comment "A summary of the resource."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                    rdfs:comment "A summary of the resource."@en .
 
 
 <http://purl.org/dc/terms/accessRights> <http://purl.org/dc/terms/description> "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."@en ;
@@ -1636,8 +1636,8 @@ rdfs:Property rdf:type owl:Class .
                                               <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Frequency> .
 
 
-<http://purl.org/dc/terms/accrualPolicy> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                         <http://purl.org/dc/terms/description> "Recommended practice is to use a value from the Collection Description Accrual Policy Vocabulary [[DCMI-ACCRUALPOLICY](https://dublincore.org/groups/collections/accrual-policy/)]."@en ;
+<http://purl.org/dc/terms/accrualPolicy> <http://purl.org/dc/terms/description> "Recommended practice is to use a value from the Collection Description Accrual Policy Vocabulary [[DCMI-ACCRUALPOLICY](https://dublincore.org/groups/collections/accrual-policy/)]."@en ;
+                                         rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                          <http://purl.org/dc/terms/issued> "2005-06-13"^^xsd:date ;
                                          <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Policy> ;
                                          rdfs:comment "The policy governing the addition of items to a collection."@en ;
@@ -1655,15 +1655,15 @@ rdfs:Property rdf:type owl:Class .
                                     rdfs:label "Audience"@en ;
                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                     <http://purl.org/dc/terms/description> "Recommended practice is to use this property with non-literal values from a vocabulary of audience types."@en ;
-                                    rdfs:comment "A class of agents for whom the resource is intended or useful."@en ;
-                                    <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/AgentClass> .
+                                    <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/AgentClass> ;
+                                    rdfs:comment "A class of agents for whom the resource is intended or useful."@en .
 
 
 <http://purl.org/dc/terms/available> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                      rdfs:label "Date Available"@en ;
                                      rdfs:comment "Date that the resource became or will become available."@en ;
-                                     <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                                     <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
+                                     <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
+                                     <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
 
 
 <http://purl.org/dc/terms/bibliographicCitation> <http://purl.org/dc/terms/description> "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en ;
@@ -1715,8 +1715,8 @@ rdfs:Property rdf:type owl:Class .
 
 <http://purl.org/dc/terms/date> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                 rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
-                                <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
                                 rdfs:label "Date"@en ;
+                                <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
                                 <http://purl.org/dc/terms/description> "Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character.  Either the start or end date may be missing."@en .
 
 
@@ -1764,9 +1764,9 @@ rdfs:Property rdf:type owl:Class .
 
 
 <http://purl.org/dc/terms/format> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                  <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Extent> ,
-                                                                          <http://purl.org/dc/terms/MediaType> ;
                                   rdfs:comment "The file format, physical medium, or dimensions of the resource."@en ;
+                                  <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/MediaType> ,
+                                                                          <http://purl.org/dc/terms/Extent> ;
                                   <http://purl.org/dc/terms/description> "Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].  Examples of dimensions include size and duration."@en ;
                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                   rdfs:label "Format"@en .
@@ -1786,8 +1786,8 @@ rdfs:Property rdf:type owl:Class .
                                    rdfs:comment "A related resource that is included either physically or logically in the described resource."@en .
 
 
-<http://purl.org/dc/terms/hasVersion> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                      rdfs:comment "A related resource that is a version, edition, or adaptation of the described resource."@en ;
+<http://purl.org/dc/terms/hasVersion> rdfs:comment "A related resource that is a version, edition, or adaptation of the described resource."@en ;
+                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                       rdfs:label "Has Version"@en ;
                                       <http://purl.org/dc/terms/description> "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of."@en ;
                                       <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
@@ -1803,13 +1803,13 @@ rdfs:Property rdf:type owl:Class .
 <http://purl.org/dc/terms/isFormatOf> rdfs:comment "A pre-existing related resource that is substantially the same as the described resource, but in another format."@en ;
                                       <http://purl.org/dc/terms/description> "This property is intended to be used with non-literal values. This property is an inverse property of Has Format."@en ;
                                       <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
-                                      rdfs:label "Is Format Of"@en ;
-                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                      rdfs:label "Is Format Of"@en .
 
 
 <http://purl.org/dc/terms/isPartOf> rdfs:label "Is Part Of"@en ;
-                                    <http://purl.org/dc/terms/description> "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."@en ;
                                     <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
+                                    <http://purl.org/dc/terms/description> "This property is intended to be used with non-literal values. This property is an inverse property of Has Part."@en ;
                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                     rdfs:comment "A related resource in which the described resource is physically or logically included."@en .
 
@@ -1884,8 +1884,8 @@ rdfs:Property rdf:type owl:Class .
 <http://purl.org/dc/terms/modified> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                     rdfs:label "Date Modified"@en ;
                                     rdfs:comment "Date on which the resource was changed."@en ;
-                                    <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
-                                    <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+                                    <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+                                    <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
 
 
 <http://purl.org/dc/terms/publisher> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
@@ -1923,11 +1923,11 @@ rdfs:Property rdf:type owl:Class .
                                     <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
 
 
-<http://purl.org/dc/terms/rights> rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                  <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
+<http://purl.org/dc/terms/rights> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
+                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                   rdfs:label "Rights"@en ;
-                                  <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/RightsStatement> ;
                                   rdfs:comment "Information about rights held in and over the resource."@en ;
+                                  <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/RightsStatement> ;
                                   <http://purl.org/dc/terms/description> "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.  Recommended practice is to refer to a rights statement with a URI.  If this is not possible or feasible, a literal value (name, label, or short text) may be provided."@en .
 
 
@@ -1938,8 +1938,8 @@ rdfs:Property rdf:type owl:Class .
                                   rdfs:comment "A related resource from which the described resource is derived."@en .
 
 
-<http://purl.org/dc/terms/spatial> rdfs:label "Spatial Coverage"@en ;
-                                   <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
+<http://purl.org/dc/terms/spatial> <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
+                                   rdfs:label "Spatial Coverage"@en ;
                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                    rdfs:comment "Spatial characteristics of the resource."@en ;
                                    <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Location> .
@@ -1952,8 +1952,8 @@ rdfs:Property rdf:type owl:Class .
                                    rdfs:isDefinedBy <http://purl.org/dc/terms/> .
 
 
-<http://purl.org/dc/terms/tableOfContents> rdfs:comment "A list of subunits of the resource."@en ;
-                                           <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
+<http://purl.org/dc/terms/tableOfContents> <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
+                                           rdfs:comment "A list of subunits of the resource."@en ;
                                            rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                            rdfs:label "Table Of Contents"@en .
 
@@ -1978,8 +1978,8 @@ rdfs:Property rdf:type owl:Class .
                                 <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
-<http://purl.org/dc/terms/valid> <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                                 rdfs:comment "Date (often a range) of validity of a resource."@en ;
+<http://purl.org/dc/terms/valid> rdfs:comment "Date (often a range) of validity of a resource."@en ;
+                                 <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
                                  <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
                                  rdfs:label "Date Valid"@en ;
                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> .
