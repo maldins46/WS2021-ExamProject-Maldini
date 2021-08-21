@@ -6,8 +6,8 @@
     <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="imports/foaf.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.bbc.co.uk/ontologies/sport/3.2" uri="imports/sport.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1629542272487" name="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl" uri="fip-3x3.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1629542272487" name="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl" uri="the-canestreet.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1629542272487" name="http://xmlns.com/foaf/0.1/" uri="imports/foaf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1629553465971" name="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl" uri="fip-3x3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1629553465971" name="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/the-canestreet.owl" uri="the-canestreet.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1629553465971" name="http://xmlns.com/foaf/0.1/" uri="imports/foaf.owl"/>
     </group>
 </catalog>
