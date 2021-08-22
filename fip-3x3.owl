@@ -99,6 +99,9 @@
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isEditionOf"/>
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#SummerTournament"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
+        <rdfs:comment xml:lang="en">Relates a Summer Tournament with one of its editions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">hasEdition</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -110,6 +113,8 @@
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
         <rdfs:comment xml:lang="en">The MVP is the player that scored more points through the match.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">hasMVP</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -121,6 +126,9 @@
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isPlayerOf"/>
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
+        <rdfs:comment xml:lang="en">Relates a team with one of its players.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">hasPlayer</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -130,7 +138,9 @@
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#hasPlayground">
         <rdfs:subPropertyOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#hasVenue"/>
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isPlaygroundOf"/>
+        <rdfs:comment xml:lang="en">Relates A FIP 3x3 Summer Tournament with the Playground in which it takes place.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">hasPlayground</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -141,6 +151,9 @@
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#staffMemberOf"/>
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#StaffMember"/>
+        <rdfs:comment xml:lang="en">Relates an editon of the tournament with one of its promoters.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">hasStaffMember</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -151,6 +164,9 @@
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isTierOf"/>
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Tier"/>
+        <rdfs:comment xml:lang="en">Relates an edition of a tournement with the assigned tier on the FIP Circuit classification.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">hasTier</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -160,7 +176,9 @@
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#hasVenue">
         <rdfs:subPropertyOf rdf:resource="http://dbpedia.org/ontology/location"/>
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isVenueOf"/>
+        <rdfs:comment xml:lang="en">Relates a sport event with the place in which it takes place.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">hasVenue</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -169,6 +187,9 @@
 
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#higherTierThan">
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#lowerTierThan"/>
+        <rdfs:comment xml:lang="en">Specifies that a tier is higher on value with respect of the other.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">higherTierThan</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -178,6 +199,8 @@
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isAwayCompetitorOf">
         <rdfs:subPropertyOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isCompetitorOf"/>
         <owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/awayCompetitor"/>
+        <swrla:isRuleEnabled xml:lang="en">isAwayCompetitorOf</swrla:isRuleEnabled>
+        <rdfs:comment xml:lang="en">Relates a competitor with a competition has competed in as an away competitor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
     </owl:ObjectProperty>
     
@@ -187,7 +210,9 @@
 
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isCompetitorOf">
         <owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasCompetitor"/>
+        <rdfs:comment xml:lang="en">Relates a competitor with che competition is competing on.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">isCompetitorOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -198,6 +223,7 @@
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#SummerTournament"/>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">isEditionOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -207,7 +233,9 @@
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isHomeCompetitorOf">
         <rdfs:subPropertyOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isCompetitorOf"/>
         <owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/homeCompetitor"/>
+        <rdfs:comment xml:lang="en">Relates a competitor with a competition has competed in as a home competitor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">isHomeCompetitorOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -216,6 +244,7 @@
 
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isMVPonMatch">
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">isMVPOnMatch</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -226,6 +255,7 @@
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">isPlayerOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -244,6 +274,7 @@
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Tier"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">isTierOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -252,6 +283,7 @@
 
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isVenueOf">
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">isVenueOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -262,6 +294,7 @@
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#lostBy"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">lost</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -270,6 +303,7 @@
 
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#lostBy">
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">lostBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -278,6 +312,8 @@
 
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#lowerTierThan">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">lowerTierThan</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -286,6 +322,7 @@
 
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#staffMemberOf">
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">staffMemberOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -297,6 +334,7 @@
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Player"/>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">teammatedWith</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -307,6 +345,7 @@
         <owl:inverseOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#wonBy"/>
         <rdfs:range rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">won</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -315,6 +354,7 @@
 
     <owl:ObjectProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#wonBy">
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
+        <rdfs:label xml:lang="en">wonBy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -364,6 +404,7 @@
     <owl:DatatypeProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#editionYear">
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
     </owl:DatatypeProperty>
     
 
@@ -401,6 +442,7 @@
         <rdfs:domain rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">The exact time in which a match takes place.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
     </owl:DatatypeProperty>
     
 
@@ -410,6 +452,7 @@
     <owl:DatatypeProperty rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#numberOfCourts">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
     </owl:DatatypeProperty>
     
 
@@ -437,7 +480,6 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
                     <rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isEditionOf"/>
@@ -606,7 +648,6 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Match"/>
-                    <rdf:Description rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.bbc.co.uk/ontologies/sport/awayCompetitor"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
@@ -745,7 +786,6 @@
 
     <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#SummerTournament">
         <rdfs:subClassOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Fip3x3DomainEntity"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error3"/>
         <rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"/>
         <rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"/>
         <rdfs:subClassOf>
@@ -765,7 +805,6 @@
 
     <owl:Class rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team">
         <rdfs:subClassOf rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Fip3x3DomainEntity"/>
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error2"/>
         <rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -834,30 +873,6 @@
         <rdfs:isDefinedBy rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl"/>
         <rdfs:label xml:lang="en">Tier</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error2 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error2"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error3 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error3"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error4 -->
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error4"/>
     
 
 
@@ -1048,89 +1063,6 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#c">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sets up the competitor teams for a given edition.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team Competitor of Edition</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.bbc.co.uk/ontologies/sport/isStageOf"/>
-                        <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#r"/>
-                        <swrl:argument2 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#e"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
-                                <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#r"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
-                                        <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#t"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isCompetitorOf"/>
-                                                <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#t"/>
-                                                <swrl:argument2 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#r"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
-                                                        <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#e"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isCompetitorOf"/>
-                        <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#t"/>
-                        <swrl:argument2 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#e"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -1974,6 +1906,89 @@
                         <swrl:propertyPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isCompetitorOf"/>
                         <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#t"/>
                         <swrl:argument2 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#st"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sets up the competitor teams for a given edition.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team Competitor of Edition</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.bbc.co.uk/ontologies/sport/isStageOf"/>
+                        <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#r"/>
+                        <swrl:argument2 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+                                <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Team"/>
+                                        <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isCompetitorOf"/>
+                                                <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#t"/>
+                                                <swrl:argument2 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#r"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#Edition"/>
+                                                        <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#e"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#isCompetitorOf"/>
+                        <swrl:argument1 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#t"/>
+                        <swrl:argument2 rdf:resource="http://maldins46.github.io/WS2021-ExamProjectMaldini/ontologies/fip-3x3.owl#e"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
