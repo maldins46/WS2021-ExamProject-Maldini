@@ -1,0 +1,56 @@
+name: Deploy
+
+# Generates a new version of the given fip and canestreet ontologies automatically
+# into the gh-pages branch, each time a one of the ontologies is modified.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.owl'
+      - '**.ttl'
+      - '**.rdf'
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Get FIP 3x3 Ontology version from OWL
+        id: fip-3x3-version
+        uses: QwerMike/xpath-action@v1
+        with:
+          filename: fip-3x3.owl
+          expression: /*[local-name()='RDF']/*[local-name()='Ontology']/*[local-name()='version'][1]/text()
+
+      - name: Get The Canestreet Ontology version from OWL
+        id: the-canestreet-version
+        uses: QwerMike/xpath-action@v1
+        with:
+          filename: the-canestreet.owl
+          expression: /*[local-name()='RDF']/*[local-name()='Ontology']/*[local-name()='version'][1]/text()
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Deploy OWL files to gh-pages
+        run: |
+          rm -rf gh-pages/ontologies
+          mkdir gh-pages/ontologies
+          mv imports gh-pages/ontologies
+          mv fip-3x3.owl gh-pages/ontologies/fip-3x3-${{ steps.fip-3x3-version.outputs.result }}.owl
+          mv the-canestreet.owl gh-pages/ontologies/the-canestreet-${{ steps.the-canestreet-version.outputs.result }}.owl
+          cd gh-pages
+          git config user.name DeployBot
+          git config user.email github-actions@github.com
+          git add ontologies
+          git commit -m "Ontology deploy" -m "FIP 3x3 Summer Tournament Ontology v. ${{ steps.fip-3x3-version.outputs.result }}, The Canestret Ontology v. ${{ steps.the-canestreet-version.outputs.result }}"
+          git push
