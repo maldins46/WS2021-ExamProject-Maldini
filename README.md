@@ -26,3 +26,7 @@ The ontologies are also available in static web locations. This means that with 
 ## Some additional notes
 
 The import schema used into the project (i.e., position some of the imported ontologies inside the `/imports` folder, instead of referring them with the original URL) has been adopted to overcome [a well-known problem](https://stackoverflow.com/questions/57728429/importing-bbc-food-ontology-in-protege-5-5) of BBC ontologies, in which the ontologies cannot be directly referred from the original location. For this reason dependency have been copied, both in a static web space and into the `/imports` subfolder, correcting the wrong lines inside the ontologies.
+
+## Additional documentation
+
+For a comprehensive project documentation, consult the file `ProjectReport.pdf`, in which the project is deeply described in order to complete the exam.
