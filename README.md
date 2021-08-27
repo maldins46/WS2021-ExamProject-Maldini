@@ -1,4 +1,5 @@
 # FIP 3x3 Summer Tournament and The Canestreet Ontologies
+[![Deploy](https://github.com/maldins46/WS2021-ExamProjectMaldini/actions/workflows/deploy.yml/badge.svg)](https://github.com/maldins46/WS2021-ExamProjectMaldini/actions/workflows/deploy.yml)
 
 This repository contains the project that I brought as the exam project for the Semantic Web course (42500), University of Bologna.
 
